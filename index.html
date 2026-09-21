@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proof Pay | Government Payment Research</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="logo">Proof<span>Pay</span></div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#estimate">Estimate</a>
+    </nav>
+
+    <button class="nav-button" onclick="scrollToEstimate()">
+        Calculate
+    </button>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">RESEARCH • PAYMENTS • PUBLIC VALUE</p>
+
+            <h1>
+                Making government payments
+                <span>easier to research.</span>
+            </h1>
+
+            <p class="hero-text">
+                Proof Pay is a research concept designed to help estimate
+                how improvements to government payment systems could affect
+                public finances.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="primary-button" onclick="scrollToEstimate()">
+                    Start an estimate
+                </button>
+
+                <a class="secondary-button" href="#research">
+                    Learn more
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+            <div class="card-label">RESEARCH ESTIMATE</div>
+            <div class="big-number">£11bn</div>
+            <p>
+                Illustrative potential value referenced by the Proof Pay
+                concept. The figure should be independently researched
+                and verified before being presented as a confirmed saving.
+            </p>
+        </div>
+    </section>
+
+
+    <section id="about" class="section">
+        <div class="section-heading">
+            <p class="eyebrow">ABOUT PROOF PAY</p>
+            <h2>Turn payment questions into evidence.</h2>
+        </div>
+
+        <div class="three-columns">
+
+            <div class="info-card">
+                <div class="icon">01</div>
+                <h3>Research</h3>
+                <p>
+                    Collect information about government payments,
+                    administration, errors, delays and potential
+                    improvements.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">02</div>
+                <h3>Estimate</h3>
+                <p>
+                    Use transparent assumptions to estimate the potential
+                    financial impact of changing how payments work.
+                </p>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">03</div>
+                <h3>Prove</h3>
+                <p>
+                    Separate verified evidence from assumptions so that
+                    decision-makers can see exactly where an estimate comes
+                    from.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="research" class="research-section">
+        <div class="research-text">
+            <p class="eyebrow">THE IDEA</p>
+
+            <h2>
+                Better payment research can reveal where money is being
+                lost, delayed or unnecessarily spent.
+            </h2>
+
+            <p>
+                Proof Pay is intended as a framework for researching
+                government payment systems. It can compare current costs
+                with possible improvements and present the assumptions
+                behind an estimate.
+            </p>
+
+            <p>
+                The goal is not to claim a saving before the evidence exists.
+                The goal is to make the evidence easier to investigate.
+            </p>
+        </div>
+
+        <div class="research-box">
+            <h3>Proof Pay framework</h3>
+
+            <div class="framework-row">
+                <span>Current payment cost</span>
+                <strong>£ —</strong>
+            </div>
+
+            <div class="framework-row">
+                <span>Potential inefficiency</span>
+                <strong>— %</strong>
+            </div>
+
+            <div class="framework-row">
+                <span>Estimated improvement</span>
+                <strong>£ —</strong>
+            </div>
+
+            <div class="framework-row total">
+                <span>Potential annual impact</span>
+                <strong id="displayResult">£0</strong>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="estimate" class="calculator-section">
+
+        <div class="calculator">
+            <p class="eyebrow">PROOF PAY CALCULATOR</p>
+
+            <h2>Build an estimate</h2>
+
+            <p>
+                Enter an estimated annual payment cost and the percentage
+                improvement you want to investigate.
+            </p>
+
+            <form id="estimateForm">
+
+                <label for="amount">
+                    Annual payment cost (£)
+                </label>
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="1000000000"
+                    min="0"
+                    step="1000"
+                    required
+                >
+
+                <label for="percentage">
+                    Potential improvement (%)
+                </label>
+
+                <input
+                    type="number"
+                    id="percentage"
+                    placeholder="5"
+                    min="0"
+                    max="100"
+                    step="0.1"
+                    required
+                >
+
+                <button type="submit" class="primary-button">
+                    Calculate potential impact
+                </button>
+            </form>
+
+            <div id="result" class="result-box">
+                <span>Estimated potential impact</span>
+                <strong>£0</strong>
+            </div>
+
+            <p class="disclaimer">
+                This calculator produces an illustrative estimate only.
+                It does not establish an actual government saving or
+                financial benefit.
+            </p>
+        </div>
+
+    </section>
+
+
+    <section class="statement-section">
+        <div>
+            <p class="eyebrow">THE PRINCIPLE</p>
+            <h2>Proof before promises.</h2>
+        </div>
+
+        <p>
+            Public-money estimates should be transparent, reproducible and
+            supported by evidence. Proof Pay is designed around that idea.
+        </p>
+    </section>
+
+</main>
+
+
+<footer>
+    <div class="logo">Proof<span>Pay</span></div>
+
+    <p>
+        A research concept for investigating government payment efficiency.
+    </p>
+
+    <p class="copyright">
+        © 2026 Proof Pay
+    </p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
